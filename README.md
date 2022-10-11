@@ -1,3 +1,10 @@
+# Personal Site
+
+- This repo will contain my personal website/portfolio
+
+<hr />
+<br />
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
