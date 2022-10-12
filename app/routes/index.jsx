@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react'
 
-export default function Index() {
+export default function Homepage() {
   return (
     <div>
       <h1>HOME</h1>
