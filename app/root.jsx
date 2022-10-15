@@ -6,6 +6,10 @@ import {
   Scripts,
   ScrollRestoration
 } from '@remix-run/react'
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
 
 export const meta = () => ({
   charset: 'utf-8',
@@ -18,7 +22,16 @@ export default function App() {
     <html lang='en'>
       <head>
         <Meta />
+        <meta name='viewport' content='initial-scale=1, width=device-width' />
         <Links />
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
+        />
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/icon?family=Material+Icons'
+        />
       </head>
       <body>
         <Outlet />
