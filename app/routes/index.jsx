@@ -1,4 +1,5 @@
 import { Link } from '@remix-run/react'
+import Button from '@mui/material/Button'
 
 export default function Homepage() {
   return (
@@ -18,6 +19,7 @@ export default function Homepage() {
           <Link to='/contact'>Contact</Link>
         </li>
       </ul>
+      <Button variant='contained'>Test Button</Button>
     </div>
   )
 }
