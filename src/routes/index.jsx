@@ -1,7 +1,6 @@
 import { Link } from '@remix-run/react'
-import { ThemeProvider, Box, Typography } from '@mui/material'
+import { ThemeProvider, Box, Typography, Button } from '@mui/material'
 import { theme } from '../assets/theme'
-import Button from '@mui/material/Button'
 
 export default function Homepage() {
   return (
