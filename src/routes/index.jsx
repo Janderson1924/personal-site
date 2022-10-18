@@ -1,48 +1,37 @@
 import { Link } from '@remix-run/react'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { ThemeProvider, Box, Typography } from '@mui/material'
+import { theme } from '../assets/theme'
 import Button from '@mui/material/Button'
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      // Purples
-      light: '#4D194D',
-      main: '#3E1F47',
-      dark: '#312244'
-    },
-    secondary: {
-      // Greens
-      dark: '#144552',
-      main: '#0B525B',
-      light: '#065A60'
-    }
-  }
-})
 
 export default function Homepage() {
   return (
-    <div>
-      <h1>HOME</h1>
-      <ul>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/projects'>Projects</Link>
-        </li>
-        <li>
-          <Link to='/blog-and-media'>Blog & Media</Link>
-        </li>
-        <li>
-          <Link to='/contact'>Contact</Link>
-        </li>
-      </ul>
-      <ThemeProvider theme={theme}>
-        <Button variant='contained' color='secondary'>
-          Test Button
+    <ThemeProvider theme={theme}>
+      <Box bgcolor='primary.light' paddingLeft='1rem' paddingBottom='1rem'>
+        <Typography variant='h2' color='font.main'>
+          HOME
+        </Typography>
+        <Link to='/about' style={{ textDecoration: 'none' }}>
+          <Typography color='font.dark'>About</Typography>
+        </Link>
+        <Link to='/projects' style={{ textDecoration: 'none' }}>
+          <Typography color='font.dark'>Projects</Typography>
+        </Link>
+        <Link to='/blog-and-media' style={{ textDecoration: 'none' }}>
+          <Typography color='font.dark'>Blog & Media</Typography>
+        </Link>
+        <Link to='/contact' style={{ textDecoration: 'none' }}>
+          <Typography color='font.dark'>Contact</Typography>
+        </Link>
+        <Button
+          href='https://github.com/Janderson1924/personal-site'
+          target='blank'
+          variant='contained'
+          color='secondary'
+        >
+          <Typography color='font.main'>Test Button</Typography>
         </Button>
-      </ThemeProvider>
-    </div>
+      </Box>
+    </ThemeProvider>
   )
 }
 
