@@ -5,7 +5,7 @@ import { theme } from '../assets/theme'
 export default function Homepage() {
   return (
     <ThemeProvider theme={theme}>
-      <Box bgcolor='primary.light' paddingLeft='1rem' paddingBottom='1rem'>
+      <Box paddingLeft='1rem' paddingBottom='1rem'>
         <Typography variant='h2' color='font.main'>
           HOME
         </Typography>

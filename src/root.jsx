@@ -33,7 +33,7 @@ export default function App() {
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
         />
       </head>
-      <body>
+      <body bgcolor='#4D194D'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
