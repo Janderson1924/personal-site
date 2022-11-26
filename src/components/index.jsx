@@ -1,1 +1,2 @@
-// file for exporting * components
+export * from './routes'
+export * from './partials'
