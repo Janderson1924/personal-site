@@ -1,34 +1,30 @@
 # Personal Site _(WIP)_
 
-- This repo will contain my personal website/portfolio. Built with React-Remix
+- This repo contains my personal website/portfolio. Built with React-Remix.
 
 <hr />
 <br />
 
 ## Getting Started
 
-From your terminal, clone this repo and run the following in the project root:
+From your terminal, clone this repo and run the following commands in the project root:
 
 ```sh
-npm install
+# install dependencies
+yarn
 ```
-
-To start your app in development mode and rebuild assets on file changes:
 
 ```sh
-npm run dev
+# start your app in development mode and rebuild assets on file changes
+yarn dev
 ```
-
-to build the app for production:
 
 ```sh
-npm run build
+# to build the app for production:
+yarn build
 ```
-
-Then run the app in production mode:
 
 ```sh
-npm start
+# run the app in production mode:
+yarn start
 ```
-
-Now you'll need to pick a host to deploy it to.
