@@ -1,3 +1,5 @@
+![Language](https://badgen.net/badge/Language/JavaScript/yellow)
+
 # Personal Site _(WIP)_
 
 - This repo contains my personal website/portfolio. Built with React-Remix.
