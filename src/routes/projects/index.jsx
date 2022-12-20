@@ -1,9 +1,12 @@
 import { Link } from '@remix-run/react'
+import { Typography } from '@mui/material'
 
 export default function Projects() {
   return (
     <main>
-      <h1>PROJECTS</h1>
+      <Typography variant='h3' color='font.dark'>
+        PROJECTS
+      </Typography>
       <Link to='/'>Home</Link>
     </main>
   )

@@ -10,6 +10,10 @@ import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
+import { ThemeProvider } from '@mui/material'
+import { theme } from '../src/styles/theme'
+
+const primaryLight = '#4D194D'
 
 export const meta = () => ({
   charset: 'utf-8',
@@ -33,12 +37,14 @@ export default function App() {
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
         />
       </head>
-      <body bgcolor='#4D194D'>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
+      <ThemeProvider theme={theme}>
+        <body bgcolor={primaryLight}>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </body>
+      </ThemeProvider>
     </html>
   )
 }
