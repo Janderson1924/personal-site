@@ -1,9 +1,12 @@
 import { Link } from '@remix-run/react'
+import { Typography } from '@mui/material'
 
 export default function About() {
   return (
     <main>
-      <h1>ABOUT</h1>
+      <Typography variant='h3' color='font.dark'>
+        ABOUT
+      </Typography>
       <Link to='/'>Home</Link>
     </main>
   )
