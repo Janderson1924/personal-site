@@ -30,3 +30,17 @@ yarn build
 # run the app in production mode:
 yarn start
 ```
+
+<br />
+
+## Testing
+
+```sh
+# open Cypress GUI to view and run tests
+yarn cypress open
+```
+
+```sh
+# run tests in CLI without GUI
+yarn cypress run
+```
