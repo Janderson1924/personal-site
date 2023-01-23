@@ -36,11 +36,11 @@ yarn start
 ## Testing
 
 ```sh
-# open Cypress GUI to view and run tests
-yarn cypress open
+# run tests in the CLI without Cypress GUI
+yarn test
 ```
 
 ```sh
-# run tests in CLI without GUI
-yarn cypress run
+# open Cypress GUI to view and run tests
+yarn cypress open
 ```
