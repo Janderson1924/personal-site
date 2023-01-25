@@ -13,9 +13,9 @@ export default function Homepage() {
       <Link to='/projects' style={{ textDecoration: 'none' }}>
         <Typography color='font.dark'>Projects</Typography>
       </Link>
-      <Link to='/blog-and-media' style={{ textDecoration: 'none' }}>
+      {/* <Link to='/blog-and-media' style={{ textDecoration: 'none' }}>
         <Typography color='font.dark'>Blog & Media</Typography>
-      </Link>
+      </Link> */}
       <Link to='/contact' style={{ textDecoration: 'none' }}>
         <Typography color='font.dark'>Contact</Typography>
       </Link>
