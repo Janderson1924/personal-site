@@ -10,8 +10,7 @@ import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 
-// const pages = ['About', 'Projects', 'Blog & Media', 'Contact']
-const pages = ['About', 'Projects', 'Contact']
+const pages = ['About', 'Projects', 'Blog & Media', 'Contact']
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
