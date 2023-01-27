@@ -21,6 +21,8 @@
     "@testing-library/cypress": "^9.0.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "isbot": "^3.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -39,8 +41,10 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
     "cypress": "^12.3.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.32.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-react": "^7.32.1",
+    "prettier": "2.8.3",
     "storybook-dark-mode": "^2.0.5"
   },
   "engines": {
