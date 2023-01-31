@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavBar } from '../../../src/components/partials/NavBar'
+import { NavBar } from '../../../src/components/shared/NavBar'
 
 export default {
-  title: 'Components/Partials/NavBar',
+  title: 'Components/Shared/NavBar',
   component: NavBar
 }
 
