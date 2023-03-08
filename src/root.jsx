@@ -11,7 +11,7 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import { ThemeProvider } from '@mui/material'
-import { theme } from '../src/styles/theme'
+import { theme } from '../src/assets/styles/theme'
 
 const primaryLight = '#4D194D'
 
