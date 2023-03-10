@@ -20,6 +20,9 @@ const theme = createTheme({
       main: '#f0ead6',
       dark: '#c6b5c9'
     }
+  },
+  typography: {
+    fontFamily: ['Montserrat', 'Lobster', 'Climate Crisis'].join(',')
   }
 })
 

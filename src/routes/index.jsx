@@ -4,7 +4,7 @@ import { Box, Typography, Button } from '@mui/material'
 export default function Homepage() {
   return (
     <Box paddingLeft='1rem' paddingBottom='1rem'>
-      <Typography variant='h2' color='font.main'>
+      <Typography variant='h2' color='font.main' fontFamily='Lobster'>
         HOME
       </Typography>
       <Link to='/about' style={{ textDecoration: 'none' }}>
