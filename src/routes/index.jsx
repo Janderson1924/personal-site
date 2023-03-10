@@ -1,5 +1,6 @@
 import { Link } from '@remix-run/react'
 import { Box, Typography, Button } from '@mui/material'
+import { GitHubButton, LinkedInButton, EmailButton } from '~/components'
 
 export default function Homepage() {
   return (
@@ -27,6 +28,9 @@ export default function Homepage() {
       >
         <Typography color='font.main'>Test Button</Typography>
       </Button>
+      <GitHubButton />
+      <LinkedInButton />
+      <EmailButton />
     </Box>
   )
 }
