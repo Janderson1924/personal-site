@@ -36,7 +36,6 @@ export const NavBar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -76,7 +75,6 @@ export const NavBar = () => {
               display: { xs: 'flex', md: 'none' },
               justifyContent: { xs: 'flex-start' },
               flexGrow: 1,
-              fontFamily: 'monospace',
               fontWeight: 700,
               color: 'inherit',
               textDecoration: 'none'
