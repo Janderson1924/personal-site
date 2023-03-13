@@ -1,11 +1,17 @@
 import { Link } from '@remix-run/react'
 import { Box, Typography, Button } from '@mui/material'
-import { GitHubButton, LinkedInButton, EmailButton } from '~/components'
+import { GitHubButton, LinkedInButton, EmailButton, NavBar } from '~/components'
 
 export default function Homepage() {
   return (
     <Box paddingLeft='1rem' paddingBottom='1rem'>
-      <Typography variant='h2' color='font.main' fontFamily='Lobster'>
+      {/* <NavBar /> */}
+      <Typography
+        variant='h2'
+        color='font.main'
+        fontFamily='Lobster'
+        // marginTop='4.5rem'
+      >
         HOME
       </Typography>
       <Link to='/about' style={{ textDecoration: 'none' }}>
