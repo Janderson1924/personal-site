@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
+import { HomeButton } from './HomeButton'
 
 const pages = ['About', 'Projects', 'Blog & Media', 'Contact']
 
@@ -42,7 +43,7 @@ export const NavBar = () => {
               textDecoration: 'none'
             }}
           >
-            JUSTIN
+            <HomeButton />
           </Typography>
           <Box
             sx={{
@@ -80,7 +81,7 @@ export const NavBar = () => {
               textDecoration: 'none'
             }}
           >
-            JUSTIN
+            <HomeButton />
           </Typography>
           <Box
             sx={{
