@@ -16,13 +16,13 @@ describe('navigation', () => {
     cy.findByText('Home').should('exist').click()
     cy.findByText('HOME').should('exist')
   })
-  it('should navigate to/from the BLOG & MEDIA route properly', () => {
-    cy.findByText('Blog & Media').click()
-    cy.findByText('BLOG & MEDIA').should('exist')
-    cy.url().should('include', '/blog-and-media')
-    cy.findByText('Home').should('exist').click()
-    cy.findByText('HOME').should('exist')
-  })
+  // it('should navigate to/from the BLOG & MEDIA route properly', () => { // TODO: comment in when Blog page is finished.
+  //   cy.findByText('Blog & Media').click()
+  //   cy.findByText('BLOG & MEDIA').should('exist')
+  //   cy.url().should('include', '/blog-and-media')
+  //   cy.findByText('Home').should('exist').click()
+  //   cy.findByText('HOME').should('exist')
+  // })
   it('should navigate to/from the CONTACT route properly', () => {
     cy.findByText('Contact').click()
     cy.findByText('CONTACT').should('exist')

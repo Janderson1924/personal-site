@@ -3,15 +3,14 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
-import Typography from '@mui/material/Typography'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
-import Button from '@mui/material/Button'
-import MenuItem from '@mui/material/MenuItem'
+import { NavLink } from './NavLink'
 import { HomeButton } from './HomeButton'
 
-const pages = ['About', 'Projects', 'Blog & Media', 'Contact']
+// const pages = ['About', 'Projects', 'Blog & Media', 'Contact'] // TODO: comment in when Blog page is finished.
+const pages = ['About', 'Projects', 'Contact']
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,25 +23,18 @@ export const NavBar = () => {
     setIsMenuOpen(false)
   }
 
+  // TODO: remove dropshadow from NavBar
+  // TODO: update dropdown menu color
+
   return (
-    <AppBar position='fixed' color='primary'>
+    <AppBar position='fixed' color='transparent'>
+      {/* what the below props do? */}
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          {/* what do the above props do? */}
-          <Typography
-            variant='h6'
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none'
-            }}
-          >
+          {/* DESKTOP VIEW --> */}
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <HomeButton />
-          </Typography>
+          </Box>
           <Box
             sx={{
               flexGrow: 1,
@@ -51,34 +43,16 @@ export const NavBar = () => {
             }}
           >
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseMenu}
-                sx={{
-                  my: 2,
-                  color: 'white',
-                  display: 'block'
-                }}
-              >
+              <NavLink onClick={handleCloseMenu} key={page}>
                 {page}
-              </Button>
+              </NavLink>
             ))}
           </Box>
-          <Typography
-            variant='h5'
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              justifyContent: { xs: 'flex-start' },
-              flexGrow: 1,
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none'
-            }}
-          >
+
+          {/* MOBILE VIEW --> */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <HomeButton />
-          </Typography>
+          </Box>
           <Box
             sx={{
               flexGrow: 1,
@@ -88,11 +62,10 @@ export const NavBar = () => {
           >
             <IconButton
               size='large'
-              aria-label='account of current user'
               aria-controls='menu-appbar' // what do these do?
               aria-haspopup='true'
               onClick={handleOpenMenu}
-              color='inherit'
+              sx={{ color: 'font.main' }}
             >
               <MenuIcon />
             </IconButton>
@@ -110,14 +83,12 @@ export const NavBar = () => {
               }}
               open={Boolean(isMenuOpen)}
               onClose={handleCloseMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' }
-              }}
+              sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseMenu}>
-                  <Typography textAlign='center'>{page}</Typography>
-                </MenuItem>
+                <NavLink key={page} onClick={handleCloseMenu}>
+                  {page}
+                </NavLink>
               ))}
             </Menu>
           </Box>
