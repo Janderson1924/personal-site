@@ -1,19 +1,13 @@
 import { Link } from '@remix-run/react'
 import { Box, Typography, Button } from '@mui/material'
-import { GitHubButton, LinkedInButton, EmailButton, NavBar } from '~/components'
+import { GitHubButton, LinkedInButton, EmailButton } from '~/components'
 
 // TODO: make less DRY?
 
 export default function Homepage() {
   return (
     <Box paddingLeft='1rem' paddingBottom='1rem'>
-      {/* <NavBar /> */}
-      <Typography
-        variant='h2'
-        color='font.main'
-        fontFamily='Lobster'
-        // marginTop='6.5rem'
-      >
+      <Typography variant='h2' color='font.main' fontFamily='Lobster'>
         HOME
       </Typography>
       <Link to='/about' style={{ textDecoration: 'none' }}>
