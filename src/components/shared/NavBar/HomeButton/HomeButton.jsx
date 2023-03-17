@@ -4,8 +4,8 @@ import { IconButton } from '@mui/material'
 
 export const HomeButton = () => {
   return (
-    <IconButton href='/' sx={{ color: 'font.main', cursor: 'pointer' }}>
-      <FlashOnIcon />
+    <IconButton href='/' sx={{ color: '#DBA13C', cursor: 'pointer' }}>
+      <FlashOnIcon fontSize='large' />
     </IconButton>
   )
 }

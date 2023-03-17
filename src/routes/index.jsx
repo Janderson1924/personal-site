@@ -2,6 +2,8 @@ import { Link } from '@remix-run/react'
 import { Box, Typography, Button } from '@mui/material'
 import { GitHubButton, LinkedInButton, EmailButton, NavBar } from '~/components'
 
+// TODO: make less DRY?
+
 export default function Homepage() {
   return (
     <Box paddingLeft='1rem' paddingBottom='1rem'>
@@ -10,7 +12,7 @@ export default function Homepage() {
         variant='h2'
         color='font.main'
         fontFamily='Lobster'
-        // marginTop='4.5rem'
+        // marginTop='6.5rem'
       >
         HOME
       </Typography>
@@ -20,9 +22,9 @@ export default function Homepage() {
       <Link to='/projects' style={{ textDecoration: 'none' }}>
         <Typography color='font.dark'>Projects</Typography>
       </Link>
-      <Link to='/blog-and-media' style={{ textDecoration: 'none' }}>
+      {/* <Link to='/blog-and-media' style={{ textDecoration: 'none' }}> // TODO: comment in when Blog page is finished.
         <Typography color='font.dark'>Blog & Media</Typography>
-      </Link>
+      </Link> */}
       <Link to='/contact' style={{ textDecoration: 'none' }}>
         <Typography color='font.dark'>Contact</Typography>
       </Link>
@@ -40,5 +42,3 @@ export default function Homepage() {
     </Box>
   )
 }
-
-// TODO: make less DRY
