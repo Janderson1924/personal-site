@@ -1,8 +1,8 @@
 import React from 'react'
-import { GitHubButton } from '../../../src/components/shared/FooterSection/GitHubButton'
+import { GitHubButton } from '../../../../src/components/shared/FooterSection/GitHubButton'
 
 export default {
-  title: 'Components/Shared/Icons/GitHubButton',
+  title: 'Components/Shared/FooterSection/Icons/GitHubButton',
   component: GitHubButton
 }
 

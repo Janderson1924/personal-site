@@ -1,8 +1,8 @@
 import React from 'react'
-import { EmailButton } from '../../../src/components/shared/FooterSection/EmailButton'
+import { EmailButton } from '../../../../src/components/shared/FooterSection/EmailButton'
 
 export default {
-  title: 'Components/Shared/Icons/EmailButton',
+  title: 'Components/Shared/FooterSection/Icons/EmailButton',
   component: EmailButton
 }
 

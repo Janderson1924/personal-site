@@ -1,1 +1,1 @@
-// for exporting the Homepage components
+export * from './HeroContactButton'
