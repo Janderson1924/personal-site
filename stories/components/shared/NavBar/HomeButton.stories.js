@@ -1,8 +1,8 @@
 import React from 'react'
-import { HomeButton } from '../../../src/components/shared/NavBar/HomeButton/HomeButton'
+import { HomeButton } from '../../../../src/components/shared/NavBar/HomeButton'
 
 export default {
-  title: 'Components/Shared/Buttons/HomeButton',
+  title: 'Components/Shared/NavBar/HomeButton',
   component: HomeButton
 }
 

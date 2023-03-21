@@ -1,8 +1,8 @@
 import React from 'react'
-import { LinkedInButton } from '../../../src/components/shared/FooterSection/LinkedInButton'
+import { LinkedInButton } from '../../../../src/components/shared/FooterSection/LinkedInButton'
 
 export default {
-  title: 'Components/Shared/Icons/LinkedInButton',
+  title: 'Components/Shared/FooterSection/Icons/LinkedInButton',
   component: LinkedInButton
 }
 
