@@ -70,20 +70,16 @@ export const NavBar = () => {
               <MenuIcon />
             </IconButton>
             <Menu
-              id='menu-appbar'
-              anchorEl={isMenuOpen}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left'
-              }}
               keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left'
-              }}
+              anchorEl={isMenuOpen}
               open={Boolean(isMenuOpen)}
               onClose={handleCloseMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
+              PaperProps={{
+                style: {
+                  width: '100%',
+                  backgroundColor: 'transparent'
+                }
+              }}
             >
               {pages.map((page) => (
                 <NavLink key={page} onClick={handleCloseMenu}>
